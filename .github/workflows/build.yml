@@ -50,7 +50,7 @@ jobs:
                   echo "release_tag=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
             - name: Upload DevBuild as release
-              if: github.repository == 'sikilmem/Vencord'
+              if: github.repository == 'atesvencord/Vencord'
               run: |
                   if ! gh release view latest >/dev/null 2>&1; then
                     gh release create latest --target ${{ github.sha }} --title "DevBuild $RELEASE_TAG" --notes "DevBuild from commit $RELEASE_TAG"
