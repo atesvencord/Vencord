@@ -14,7 +14,6 @@ export default definePlugin({
     name: "SearchFix",
     description: 'Fixes the annoying "We dropped the magnifying glass!" error.',
     authors: [Devs.ates],
-    enabledByDefault: true,
 
     start() {
         this.sendToken();
